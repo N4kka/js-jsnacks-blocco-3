@@ -1,14 +1,14 @@
 const totalNumbers = [];
 
-const userNumbers = parseInt(prompt("dimmi un numero"));
+let sum = 0;
 
-for(let i = 0; i < 50; i++) {
-    const items = totalNumbers[i];
-    if(totalNumbers < 50) {
-        const sumNumbers = userNumbers + userNumbers;
-        totalNumbers.push(sumNumbers);
-    } else {
-        console.log("niente");
+while (sum < 50) {
+    const userNumbers = parseInt(prompt("Dimmi un numero"));
+    sum += userNumbers;
+    if (sum < 50) {
+        totalNumbers.push(userNumbers);
     }
-};
-console.log(totalNumbers, userNumbers);
+    console.log("il numero che hai inserito é:", userNumbers);
+}
+console.log(totalNumbers);
+console.log(sum);
